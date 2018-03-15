@@ -1,6 +1,6 @@
 -module (miner_client).
 -export ([start/1, loop/1]).
--define(TIMEOUT, 2000). % One minute
+-define(TIMEOUT, 2000).
 
 start(Tokens) -> spawn(miner_client, loop, [Tokens]).
 
